@@ -1,12 +1,20 @@
 <template>
     <div>
         <h2>this is menu top ten</h2>
+
+        <input type="text" v-model="name" />
+
+        {{name}} 
     </div>
 </template>
 
 <script>
 export default {
-
+    data() {
+        return {
+            name: "this is a name binding"
+        }
+    },
 }
 </script>
 
