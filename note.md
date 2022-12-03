@@ -113,3 +113,45 @@ export default {
 }
 </script>
 ```
+
+Lifecycle
+---
+Vòng đời của component trong vue
+
+![image](https://dltqhkoxgn1gx.cloudfront.net/img/posts/how-to-use-lifecycle-hooks-in-vue3-1.png)
+
+những khung có chữ màu đỏ dc gọi là các hook (là những hàm mà chúng ta móc vào)
+
+[video giải thích](https://youtu.be/j97QtHf0CHY?t=3287)
+
+Binding
+---
+ - value binding: {{ xxx }}
+ - property binding: bind thuộc tính của 1 element theo một property đã khai báo
+    ```
+    <h1 v-bind:id="id">
+
+    data() {
+        return {
+            id: "abc"
+        }
+    },
+    ```
+
+ - cách viết `v-bind:property="variable"` hoặc cách viết tắt `:property="variable"`
+    - style and class binding thì dùng `:class`
+
+Model
+---
+Liên kết element với property
+
+Event handling
+---
+ - bắt sự kiện từ các element
+ - cách dùng: `v-on:eventName="something"`
+    - ví dụ: `v-on:click="doSomething()"`
+    - viết tắt `@` -> `@click`
+ - prevent default event : huỷ bỏ event mặc định của element
+ - debounce: hoãn event lại một khoảng thời gian rồi mới thực thi
+ - ref: ánh xạ đến chính element
+ 

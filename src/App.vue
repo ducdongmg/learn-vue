@@ -1,16 +1,16 @@
 <template>
   <div>
-    <MenuTop />
+    <TextModel />
   </div>
 </template>
 
 <script>
-import MenuTop from './components/MenuTop.vue'
+import TextModel from './components/EventHandling.vue'
 
 export default {
   name: 'App',
   components: {
-    MenuTop
+    TextModel
   }
 }
 </script>

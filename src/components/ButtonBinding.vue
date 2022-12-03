@@ -3,9 +3,9 @@
         <h2 v-show="isShow">this is the element we want to coltrol</h2>
 
         <button @click="isShow = !isShow" > show / hide</button>
-<br/>
-<input type="text" :class="{className:showClassName}" :disabled="inputDisabled" />
-<button @click="inputDisabled = !inputDisabled" > enable / disabled</button>
+        <br/>
+        <input type="text" :class="{className:showClassName}" :disabled="inputDisabled" />
+        <button @click="inputDisabled = !inputDisabled" > enable / disabled</button>
 
     </div>
 </template>
@@ -24,7 +24,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    .className {
-        color: red;
-    }
 </style>
