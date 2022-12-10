@@ -1,16 +1,16 @@
 <template>
   <div>
-    <TextModel />
+    <TodoTasks />
   </div>
 </template>
 
 <script>
-import TextModel from './components/EventHandling.vue'
+import TodoTasks from './components/TodoList.vue'
 
 export default {
   name: 'App',
   components: {
-    TextModel
+    TodoTasks
   }
 }
 </script>

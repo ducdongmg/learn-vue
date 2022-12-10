@@ -154,4 +154,16 @@ Event handling
  - prevent default event : huỷ bỏ event mặc định của element
  - debounce: hoãn event lại một khoảng thời gian rồi mới thực thi
  - ref: ánh xạ đến chính element
- 
+
+ Conditional rendering
+ ---
+ - v-show: ẩn hiện 1 element theo điều kiện
+    - cách dùng `v-show="isShow"`
+ - v-hide: ngược lại với `v-show`
+ - v-if: giống ở `v-show` ở chỗ điều khiển element ẩn hiện. Nhưng khác ở chỗ dùng `v-show` thì element vẫn còn trên DOM và chỉ thay đổi ờ style, còn `v-if` thì element bị xoá trên DOM luôn
+  - v-el
+
+List rendering
+---
+
+
