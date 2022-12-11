@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import TodoTasks from './components/TodoList.vue'
+import TodoTasks from './components/MethodsInVue.vue'
 
 export default {
   name: 'App',

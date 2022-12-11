@@ -1,9 +1,9 @@
 <template>
     <div>
         <input type="text" v-model="newTask">
-        <button @click="tasks.push({ title: newTask, status: false })">Them</button>
+        <button @click="addTask()">Them</button>
         <div v-for="task in tasks" :key="task.id">
-            <input  type="checkbox" v-model="task.status" />
+                <input type="checkbox" v-model="task.status" />
             <span :class="{done: task.status}">{{ task.title }} </span> 
         </div>
 
@@ -22,6 +22,13 @@ export default {
             ]
         }
     },
+    methods: {
+        addTask: function() {
+            this.tasks.push(
+                { title: this.newTask, status: false }
+            )
+        }
+    }
 }
 </script>
 

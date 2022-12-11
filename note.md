@@ -28,6 +28,11 @@ vue create my-project
 vue ui
 ```
 
+Cách chạy web
+---
+`npm run serve`
+
+
 Cấu trúc thư mục
 ---
 **public**: chứa file index.html hiển thị trên browser
@@ -140,6 +145,10 @@ Binding
 
  - cách viết `v-bind:property="variable"` hoặc cách viết tắt `:property="variable"`
     - style and class binding thì dùng `:class`
+    ```
+    <span :class="{done: task.status}">{{ task.title }} </span> 
+    ```
+    thẻ span sẽ dc asign class `done` khi variable `task.status = true`
 
 Model
 ---
@@ -165,5 +174,8 @@ Event handling
 
 List rendering
 ---
+ - v-for
 
-
+Methods
+---
+hàm của vue object

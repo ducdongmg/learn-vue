@@ -22,3 +22,14 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### extension
+ - eslint: install from command
+ ```
+ npx eslint --init
+ ```
+
+ to show eslint config file, let use `command + shift + .`
+
+ - vetur: install from vscode extension
+ - 
