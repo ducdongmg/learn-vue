@@ -179,3 +179,22 @@ List rendering
 Methods
 ---
 hàm của vue object
+
+watch
+---
+theo dõi sự thay đổi của 1 biến realime. 
+vd: khi nhập liệu mà có 1 character nào đó mà hệ thống ko cho phép dùng thì cảnh báo lên cho người dùng liền
+
+
+hooks
+---
+***mounted***
+
+hàm giống như contructor. Khi object được gắn lên trên trang html thì nó sẽ chạy hàm này đầu tiên.
+Trong này chúng ta có thể gọi những hàm init
+
+
+
+
+
+

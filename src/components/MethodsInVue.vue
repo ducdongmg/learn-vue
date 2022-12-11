@@ -22,11 +22,20 @@ export default {
             ]
         }
     },
+    mounted() {
+       // goi api o day 
+    },
     methods: {
         addTask: function() {
             this.tasks.push(
                 { title: this.newTask, status: false }
             )
+        }
+    },
+    watch: {
+        newTask: function(newVal, oldVal) {
+            console.log(oldVal);
+            console.log(newVal);
         }
     }
 }
