@@ -194,6 +194,13 @@ hàm giống như contructor. Khi object được gắn lên trên trang html th
 Trong này chúng ta có thể gọi những hàm init
 
 
+props
+---
+ - dữ liệu lấy từ component cha sang component con
+ - có 2 cách lấy
+    - cách 1 : dùng mảng tên các props
+    - cách 2: định nghĩa đối tượng
+    
 
 
 

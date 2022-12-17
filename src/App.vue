@@ -1,16 +1,27 @@
 <template>
   <div>
-    <TodoTasks />
+    <TodoTasks v-for="(task, index) in taskList" :key="index" :taskProp1="task" />
   </div>
+
+  
 </template>
 
 <script>
-import TodoTasks from './components/MethodsInVue.vue'
+import TodoTasks from './components/TaskObj.vue'
 
 export default {
   name: 'App',
   components: {
     TodoTasks
+  },
+  data() {
+    return {
+      taskList: [
+                { title: 'My journey with Vue', status: false },
+                { title: 'Blogging with Vue', status: true },
+                { title: 'Why Vue is so fun', status: false }
+            ]
+    }
   }
 }
 </script>
