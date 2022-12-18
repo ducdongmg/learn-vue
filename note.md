@@ -197,10 +197,20 @@ Trong này chúng ta có thể gọi những hàm init
 props
 ---
  - dữ liệu lấy từ component cha sang component con
+ - cách dùng: ở nơi gọi thì `:propsName="variable"`
  - có 2 cách lấy
-    - cách 1 : dùng mảng tên các props
+    - cách 1 : dùng mảng tên các props. `props : ['taskProp1', 'taskProp2']`
     - cách 2: định nghĩa đối tượng
-    
+    ```
+    props: {
+        taskProp1 : { // cách 2: define object
+            type: Object,
+            default: function() {
+                return { title: 'My journey with Vue', status: false }
+            }
+        }
+    },
+    ```
 
 
 
