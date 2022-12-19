@@ -28,6 +28,11 @@ vue create my-project
 vue ui
 ```
 
+Cách chạy web
+---
+`npm run serve`
+
+
 Cấu trúc thư mục
 ---
 **public**: chứa file index.html hiển thị trên browser
@@ -140,6 +145,10 @@ Binding
 
  - cách viết `v-bind:property="variable"` hoặc cách viết tắt `:property="variable"`
     - style and class binding thì dùng `:class`
+    ```
+    <span :class="{done: task.status}">{{ task.title }} </span> 
+    ```
+    thẻ span sẽ dc asign class `done` khi variable `task.status = true`
 
 Model
 ---
@@ -165,5 +174,46 @@ Event handling
 
 List rendering
 ---
+ - v-for
+
+Methods
+---
+hàm của vue object
+
+watch
+---
+theo dõi sự thay đổi của 1 biến realime. 
+vd: khi nhập liệu mà có 1 character nào đó mà hệ thống ko cho phép dùng thì cảnh báo lên cho người dùng liền
+
+
+hooks
+---
+***mounted***
+
+hàm giống như contructor. Khi object được gắn lên trên trang html thì nó sẽ chạy hàm này đầu tiên.
+Trong này chúng ta có thể gọi những hàm init
+
+
+props
+---
+ - dữ liệu lấy từ component cha sang component con
+ - cách dùng: ở nơi gọi thì `:propsName="variable"`
+ - có 2 cách lấy
+    - cách 1 : dùng mảng tên các props. `props : ['taskProp1', 'taskProp2']`
+    - cách 2: định nghĩa đối tượng
+    ```
+    props: {
+        taskProp1 : { // cách 2: define object
+            type: Object,
+            default: function() {
+                return { title: 'My journey with Vue', status: false }
+            }
+        }
+    },
+    ```
+
+filters
+---
+tính năng này chỉ có trên vue2 và sang vue 3 thì ko thể sử dụng dc nữa
 
 

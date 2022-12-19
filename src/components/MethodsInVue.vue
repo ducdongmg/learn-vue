@@ -1,9 +1,9 @@
 <template>
     <div>
         <input type="text" v-model="newTask">
-        <button @click="tasks.push({ title: newTask, status: false })">Them</button>
+        <button @click="addTask()">Them</button>
         <div v-for="task in tasks" :key="task.id">
-            <input  type="checkbox" v-model="task.status" />
+                <input type="checkbox" v-model="task.status" />
             <span :class="{done: task.status}">{{ task.title }} </span> 
         </div>
 
@@ -22,6 +22,22 @@ export default {
             ]
         }
     },
+    mounted() {
+       // goi api o day 
+    },
+    methods: {
+        addTask: function() {
+            this.tasks.push(
+                { title: this.newTask, status: false }
+            )
+        }
+    },
+    watch: {
+        newTask: function(newVal, oldVal) {
+            console.log(oldVal);
+            console.log(newVal);
+        }
+    }
 }
 </script>
 
