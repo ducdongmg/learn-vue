@@ -212,6 +212,8 @@ props
     },
     ```
 
-
+filters
+---
+tính năng này chỉ có trên vue2 và sang vue 3 thì ko thể sử dụng dc nữa
 
 

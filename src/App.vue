@@ -3,6 +3,8 @@
     <TodoTasks v-for="(task, index) in taskList" :key="index" :taskProp1="task" />
     <hr/>
     <FavoritedChoise />
+    <hr/>
+    <FilterMoney />
   </div>
 
   
@@ -11,11 +13,13 @@
 <script>
 import TodoTasks from './components/TaskObj.vue'
 import SelectChoise from './components/SelectChoise.vue'
+import FilterMoney from './components/FilterMoney.vue'
 
 export default {
   name: 'App',
   components: {
     TodoTasks,
+    FilterMoney,
     FavoritedChoise: SelectChoise
   },
   data() {
