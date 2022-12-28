@@ -32,4 +32,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
  to show eslint config file, let use `command + shift + .`
 
  - vetur: install from vscode extension
- - 
+ - Material Icon Theme
+ - Auto Close Tag
+ - Duplicate action
+ - Prettier - Code formatter
+ - Vue 3 Snippets
